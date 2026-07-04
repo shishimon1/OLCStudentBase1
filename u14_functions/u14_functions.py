@@ -23,16 +23,17 @@ def area_circle(radius): # radius is a parameter
 
     return(area)
 
+# print(area_circle(67))
 # calculate the total area of all these circles...
-# list_of_radius = [3.9,63.6,68.4,96.5,44.8]
-# total_area = 0
+list_of_radius = [3.9,63.6,68.4,96.5,44.8]
+total_area = 0
 
-# for circle in list_of_radius:
-#     current = area_circle(circle)
+for circle in list_of_radius:
+    current = area_circle(circle)
 
-#     total_area = total_area + current
+    total_area += current
 
-# print(total_area)
+print(total_area)
 
 
 ###########################################################
@@ -75,10 +76,10 @@ def calculator(num1, num2, ope):
     elif ope == "/":
         return num1 / num2
 
-print(calculator(10, 5, "+"))
-print(calculator(10, 5, "-"))
-print(calculator(10, 5, "*"))
-print(calculator(10, 5, "/"))
+# print(calculator(10, 5, "+"))
+# print(calculator(10, 5, "-"))
+# print(calculator(10, 5, "*"))
+# print(calculator(10, 5, "/"))
 
 
 #------------------------------------------------------------
@@ -122,10 +123,52 @@ def multiplication_table(num):
 
 
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-multiplication_table(num)
+# multiplication_table(num)
 
 
 
 #------------------------------------------------------------
+
+#------------------------------------------------------------
+# Exercise 3: Weather Advisory
+# A weather station wants to display a weather advisory for a city.
+#
+# Write a function weather_report(city, temperature) that prints:
+# City: 
+# Temperature: °C
+# Advisory: 
+#
+# The advisory should be:
+# "Hot" if temperature is 32 or above
+# "Warm" if temperature is from 25 to 31
+# "Cool" if temperature is below 25
+#
+# Example function call:
+# weather_report("Singapore", 31)
+#
+# Sample output:
+# City: Singapore
+# Temperature: 31°C
+# Advisory: Warm
+
+def weather_report(city, temperature):
+
+    print(f"City: {city}")
+    print(f"Temperature: {temperature}°C")
+
+    if temperature >= 32:
+        print("Advisory: Hot")
+
+    elif temperature >= 25:
+        print("Advisory: Warm")
+
+    # elif temperature < 25:
+    else:
+        print("Advisory: Cool")
+
+
+weather_report("Singapore", 31)
+
+

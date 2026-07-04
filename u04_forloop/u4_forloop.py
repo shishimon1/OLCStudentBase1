@@ -1,3 +1,14 @@
+students = ["bob","john","joanne","joseph","mark","ethan","cayden"]
+# loop through each name in the list and say hello to the person
+# e.g. hello bob!
+
+### only say hello to students whose name starts with j
+for i in students:
+    if i[0] == "j":
+        print(f"Hello {i}!")
+
+    else:
+        break
 
 
 ###########################################################
@@ -14,205 +25,205 @@
 # Bonus Challenge: Print on one line, separated by spaces.
 
 # Example: Output = 0 1 2 3 4 5 6 7 8 9
-for i in range(10):
-    print(i)
+# for i in range(10):
+#     print(i)
 
 
 
 
-#------------------------------------------------------------
-# Exercise 2: Count Down with range(start, stop, step)
-# Print 10 down to 1 
-# Bonus Challenge: Print on one line, separated by spaces.
-# Example: Output = 10 9 8 7 6 5 4 3 2 1
-range(10)
+# #------------------------------------------------------------
+# # Exercise 2: Count Down with range(start, stop, step)
+# # Print 10 down to 1 
+# # Bonus Challenge: Print on one line, separated by spaces.
+# # Example: Output = 10 9 8 7 6 5 4 3 2 1
+# range(10)
 
 
 
-for i in range(10,0,-1):
-    print(i)
-
-
-
-
-#------------------------------------------------------------
-# Exercise 3: Evens in a Range
-# Print all even numbers from 2 to 20.
-# Bonus Challenge: Print on one line, separated by spaces.
-# Example: Output = 2 4 6 8 10 12 14 16 18 20
-for i in range(0,22,2):
-    print(i)
+# for i in range(10,0,-1):
+#     print(i)
 
 
 
 
-#------------------------------------------------------------
-# Exercise 4: Multiples with Steps
-# Print the first 6 multiples of 9.
-# Use: range(start, stop, step) where step = 9
-# Tip: Think about where to stop so you get 6 numbers.
-# Example: Output = 9 18 27 36 45 54
-for i in range(9,9*6+1,9):
-    print(i)
+# #------------------------------------------------------------
+# # Exercise 3: Evens in a Range
+# # Print all even numbers from 2 to 20.
+# # Bonus Challenge: Print on one line, separated by spaces.
+# # Example: Output = 2 4 6 8 10 12 14 16 18 20
+# for i in range(0,22,2):
+#     print(i)
 
 
 
 
-#------------------------------------------------------------
-# Exercise 5: Running Total (Accumulator)
-# Compute the sum of all integers from 1 to 100 (inclusive) and print it.
-# Use: range(1, 101)
-# Example: Output = 5050
-
-
-total = 0
-
-for i in range(1,101):
-    total = total + i
-
-# f string
-print(f"The sum of the numbers from 1 to 100 is {total}")
-
-
-#------------------------------------------------------------
-# Exercise 6: Sum of Multiples
-# Compute the sum of multiples of 3 from 3 to 30 (inclusive).
-# Use: range(3, 31, 3)
-# Example: Output = 165
-
-total = 0
-
-for i in range(3,31,3):
-    total = total + i
-
-print(total)
+# #------------------------------------------------------------
+# # Exercise 4: Multiples with Steps
+# # Print the first 6 multiples of 9.
+# # Use: range(start, stop, step) where step = 9
+# # Tip: Think about where to stop so you get 6 numbers.
+# # Example: Output = 9 18 27 36 45 54
+# for i in range(9,9*6+1,9):
+#     print(i)
 
 
 
 
-#------------------------------------------------------------
-# Exercise 7: Loop Through a String (characters)
-# Count the vowels in the string and print the total.
-# Data:
+# #------------------------------------------------------------
+# # Exercise 5: Running Total (Accumulator)
+# # Compute the sum of all integers from 1 to 100 (inclusive) and print it.
+# # Use: range(1, 101)
+# # Example: Output = 5050
+
+
+# total = 0
+
+# for i in range(1,101):
+#     total = total + i
+
+# # f string
+# print(f"The sum of the numbers from 1 to 100 is {total}")
+
+
+# #------------------------------------------------------------
+# # Exercise 6: Sum of Multiples
+# # Compute the sum of multiples of 3 from 3 to 30 (inclusive).
+# # Use: range(3, 31, 3)
+# # Example: Output = 165
+
+# total = 0
+
+# for i in range(3,31,3):
+#     total = total + i
+
+# print(total)
+
+
+
+
+# #------------------------------------------------------------
+# # Exercise 7: Loop Through a String (characters)
+# # Count the vowels in the string and print the total.
+# # Data:
+# # text = "Computhink Academy"
+# # Vowels: a, e, i, o, u (case-insensitive)
+# # Example: Output = 6
+
 # text = "Computhink Academy"
-# Vowels: a, e, i, o, u (case-insensitive)
-# Example: Output = 6
+# vowels = ["a","e","i","o","u"]
+# vcount = 0
 
-text = "Computhink Academy"
-vowels = ["a","e","i","o","u"]
-vcount = 0
+# for char in "Computhink Academy":
+#     if char.lower() in vowels:
+#         vcount = vcount + 1
 
-for char in "Computhink Academy":
-    if char.lower() in vowels:
-        vcount = vcount + 1
-
-print(f"There are a total of {vcount} vowels")
+# print(f"There are a total of {vcount} vowels")
 
 
 
-#------------------------------------------------------------
-# Exercise 8: Loop Through a String Using Index
-# Print each character with its index in the format: index:char
-# Data:
+# #------------------------------------------------------------
+# # Exercise 8: Loop Through a String Using Index
+# # Print each character with its index in the format: index:char
+# # Data:
+# # name = "Python"
+# # Example: 
+# # 0:P
+# # 1:y
+# # 2:t
+# # 3:h
+# # 4:o
+# # 5:n
+
 # name = "Python"
-# Example: 
-# 0:P
-# 1:y
-# 2:t
-# 3:h
-# 4:o
-# 5:n
 
-name = "Python"
-
-for i in range(len(name)):
-    # print({[i]}:{name[i]})
+# for i in range(len(name)):
+#     # print({[i]}:{name[i]})
 
 
-    print(f"{i}:{name[i]}")
+#     print(f"{i}:{name[i]}")
 
 
 
 
 
-#------------------------------------------------------------
-# Exercise 9: Every 2nd Character (Index Step)
-# Print every 2nd character (positions 0, 2, 4, ...) of the string on one line (no spaces).
-# Data:
+# #------------------------------------------------------------
+# # Exercise 9: Every 2nd Character (Index Step)
+# # Print every 2nd character (positions 0, 2, 4, ...) of the string on one line (no spaces).
+# # Data:
+# # s = "abcdefghijkl"
+# # Example: Output = acegik
+
 # s = "abcdefghijkl"
-# Example: Output = acegik
 
-s = "abcdefghijkl"
-
-for char in range(len(s)):
-    if char % 2 == 0:
-        print(f"{s[char]}") 
+# for char in range(len(s)):
+#     if char % 2 == 0:
+#         print(f"{s[char]}") 
 
 
 
 
-#------------------------------------------------------------
-# Exercise 10: Loop Through a List (values)
-# Print the squares of all numbers in the list on one line, separated by spaces.
-# Data:
+# #------------------------------------------------------------
+# # Exercise 10: Loop Through a List (values)
+# # Print the squares of all numbers in the list on one line, separated by spaces.
+# # Data:
+# # nums = [3, 1, 4, 1, 5, 9]
+# # Example: Output = 9 1 16 1 25 81
 # nums = [3, 1, 4, 1, 5, 9]
-# Example: Output = 9 1 16 1 25 81
-nums = [3, 1, 4, 1, 5, 9]
 
-for i in range(len(nums)):
+# for i in range(len(nums)):
     
-    print(nums[i] ** 2)
+#     print(nums[i] ** 2)
 
 
-#------------------------------------------------------------
-# Exercise 11: Loop Through a List Using Index
-# Replace every negative number in the list with 0, then print the updated list.
-# Data:
+# #------------------------------------------------------------
+# # Exercise 11: Loop Through a List Using Index
+# # Replace every negative number in the list with 0, then print the updated list.
+# # Data:
+# # data = [5, -2, 7, -9, 0, 4]
+# # Expected final list: [5, 0, 7, 0, 0, 4]
+
 # data = [5, -2, 7, -9, 0, 4]
-# Expected final list: [5, 0, 7, 0, 0, 4]
+# #data[2] = 70
 
-data = [5, -2, 7, -9, 0, 4]
-#data[2] = 70
+# for n in range(len(data)):
+#    # print(data[n]) #all the numbers
+#     if data[n]<0:
+#         data[n] = 0
 
-for n in range(len(data)):
-   # print(data[n]) #all the numbers
-    if data[n]<0:
-        data[n] = 0
-
-    print(data[n])
+#     print(data[n])
 
 
 
 
 
-#------------------------------------------------------------
-# Exercise 12: Manual Max (No max())
-# Find and print the largest number in the list without using max().
-# Data:
+# #------------------------------------------------------------
+# # Exercise 12: Manual Max (No max())
+# # Find and print the largest number in the list without using max().
+# # Data:
+# # scores = [42, 67, 23, 88, 55, 88, 12]
+# # Example: Output = 88
+
 # scores = [42, 67, 23, 88, 55, 88, 12]
-# Example: Output = 88
+# largest = 0
 
-scores = [42, 67, 23, 88, 55, 88, 12]
-largest = 0
+# for n in scores:
+#     if n > largest:
+#         largest = n
 
-for n in scores:
-    if n > largest:
-        largest = n
-
-print(largest)
+# print(largest)
 
 
 
-#------------------------------------------------------------
-# Exercise 13: Loop through a List (index + value)
-# Print each item with a 1-based index like "1) apple", "2) banana", ...
-# Data:
+# #------------------------------------------------------------
+# # Exercise 13: Loop through a List (index + value)
+# # Print each item with a 1-based index like "1) apple", "2) banana", ...
+# # Data:
+# # fruits = ["apple", "banana", "cherry", "durian"]
+
 # fruits = ["apple", "banana", "cherry", "durian"]
 
-fruits = ["apple", "banana", "cherry", "durian"]
-
-for i in range(len(fruits)):
-    print(f"{i+1}:{fruits[i]}")
+# for i in range(len(fruits)):
+#     print(f"{i+1}:{fruits[i]}")
 
 
 
