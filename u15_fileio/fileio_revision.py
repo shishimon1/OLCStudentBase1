@@ -168,21 +168,21 @@
 # Write your code below.
 # ---------------------------------------------------------
 
-with open("q5_marks.txt", "r") as fobj:
-    content = fobj.readlines()
+# with open("q5_marks.txt", "r") as fobj:
+#     content = fobj.readlines()
 
-content2 = []
-count = 0
+# content2 = []
+# count = 0
 
-for i in content:
-    content2.append(int(i))
-    if int(i) > 50:
-        count += 1
+# for i in content:
+#     content2.append(int(i))
+#     if int(i) > 50:
+#         count += 1
 
-    # print(i,end = "")
-print(f"{count} amount of students passed")
+#     # print(i,end = "")
+# print(f"{count} amount of students passed")
 
-print(f"The highest mark is {max(content2)}, lowest mark is {min(content2)}, average mark is {sum(content2)/len(content2)}")
+# print(f"The highest mark is {max(content2)}, lowest mark is {min(content2)}, average mark is {sum(content2)/len(content2)}")
 
 
 
@@ -219,10 +219,21 @@ print(f"The highest mark is {max(content2)}, lowest mark is {min(content2)}, ave
 # Write your code below.
 # ---------------------------------------------------------
 
+# with open("q6_names.txt", "r") as fobj:
+#     content = fobj.readlines()
+
+# with open("q6_names_upper.txt", "w") as fobj2:
+#     for i in content:
+#         names = (i[0:1].upper() + i[1:])
+
+#         write = fobj2.write(names)
 
 
+# open the file and read the values... # store the data as a list...
 
+# how to loop through each name, how to convert to capital case???
 
+# ## open another file write back into the file
 
 
 
@@ -253,7 +264,23 @@ print(f"The highest mark is {max(content2)}, lowest mark is {min(content2)}, ave
 # Write your code below.
 # ---------------------------------------------------------
 
+with open("q7_temperatures.txt", "r") as fobj:
+    content = fobj.readlines()
 
+hot_days = []
+count = 0
+
+with open("hot_days.txt", "w") as fobj2:
+    for i in content:
+        if int(i) > 30:
+            hot_days.append(i)
+            count += 1
+    
+    fobj2.writelines(hot_days) # writelines writes a list into a file
+    
+    fobj2.write(f"\nThere was {count} amount of hot days.")
+
+print(hot_days)
 
 
 
