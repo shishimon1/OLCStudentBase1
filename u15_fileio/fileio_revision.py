@@ -1,4 +1,39 @@
- 
+
+
+# student_scores = {}
+
+# with open("student_scores.txt","r") as fobj:
+#     read = fobj.readlines() # read every line, items in a list
+
+# # print(read)
+
+    
+
+
+        
+
+#     # loop through every value in the list
+#     for value in read:
+
+#         # for every value, remove the \n
+#         value = value.strip()
+        
+#         # remove the \n and spaces
+#         temp_list = value.split(":")
+        
+
+#         #  for every value, split the name and the score john:89
+
+
+#     # for every name and score, add to dictionary
+#         student_scores[temp_list[0]] = int(temp_list[1])
+
+# print(student_scores)
+
+
+
+
+
 # with open("filename.txt", "r") as fobj:
 #     content = fobj.read()
 
@@ -147,12 +182,12 @@
 # Read, process, and count
 #
 # A text file q5_marks.txt contains one mark per line:
-75
-62
-88
-49
-91
-56
+# 75
+# 62
+# 88
+# 49
+# 91
+# 56
 #
 # Write a program to:
 # 1. Read all the marks from the file
@@ -264,23 +299,23 @@
 # Write your code below.
 # ---------------------------------------------------------
 
-with open("q7_temperatures.txt", "r") as fobj:
-    content = fobj.readlines()
+# with open("q7_temperatures.txt", "r") as fobj:
+#     content = fobj.readlines()
 
-hot_days = []
-count = 0
+# hot_days = []
+# count = 0
 
-with open("hot_days.txt", "w") as fobj2:
-    for i in content:
-        if int(i) > 30:
-            hot_days.append(i)
-            count += 1
+# with open("hot_days.txt", "w") as fobj2:
+#     for i in content:
+#         if int(i) > 30:
+#             hot_days.append(i)
+#             count += 1
     
-    fobj2.writelines(hot_days) # writelines writes a list into a file
+#     fobj2.writelines(hot_days) # writelines writes a list into a file
     
-    fobj2.write(f"\nThere was {count} amount of hot days.")
+#     fobj2.write(f"\nThere was {count} amount of hot days.")
 
-print(hot_days)
+# print(hot_days)
 
 
 
@@ -321,9 +356,21 @@ print(hot_days)
 # Write your code below.
 # ---------------------------------------------------------
 
+animal_behaviours = {}
+
+with open("q8_animal_names.txt","r") as fobj:
+    names = fobj.read()
+    namelist = names.split(",")
 
 
+with open("q8_animal_sounds.txt","r") as fobj2:
+    sounds = fobj2.read()
+    soundlist = sounds.split(",")
 
+for i in range(len(namelist)):
+    animal_behaviours[namelist[i]] = soundlist[i]
+
+print(animal_behaviours)
 
 
 

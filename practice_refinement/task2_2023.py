@@ -156,3 +156,4 @@ if len(alist) == 0:
 #     if len(alist) == 0:
 #         print("Congratulations, Player 2 has guessed all the animals")
 #         break
+
